@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>square and factorial</title>
+    <script>
+        function factorial(){
+            let n=parseInt(document.querySelector("#num").value);
+            f=1;
+        
+            if(n===0){
+                document.querySelector("#res").value=1;
+            }
+            else{
+                for(let i=1;i<=n;i++){
+                    f=f*i
+
+                }
+                document.querySelector("#res").value=f;
+            }
+        }
+        function square(){
+            let n=parseInt(document.querySelector("#num").value);
+            document.querySelector("#res").value=n*n;
+
+        }
+    </script>
+</head>
+<body>
+    Enter number:<input type="text" id="num">
+    <button id="fact" onclick="factorial()">compute factorial</button>
+    <button id="sqr" onclick="square()">compute square</button><br>
+    result:<input type="text" id="res">
+</body>
+</html>

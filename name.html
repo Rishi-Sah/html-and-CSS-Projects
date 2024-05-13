@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function res(){
+      let str1=document.querySelector("#fn").value;
+      let str2=document.querySelector("#ln").value;
+      document.querySelector("#res").value=str1+str2;
+      }
+    </script>
+</head>
+<body>
+    <h1>Display Full Name</h1>
+    <br>
+    First name:<input type="text" id="fn">
+    Last Nmae:<input type="text" id="ln"><br>
+    <br>
+    result:<input id="res" ><button id="r" onclick="res()" >enter</button>
+</body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      function add(){
+         let add=document.querySelector("#additm").value;
+         document.querySelector("#tbl").push(add);
+      }
+   </script>
+</head>
+<body>
+   <h1>List of Shopping Items</h1>
+   <table border="1" id="tbl">
+      <tr>
+         <th>SL NO.</th>
+         <th>Items</th>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>Mango</td>
+      </tr>
+      
+   </table>
+   Enter The Item To Add:<input type="text" id="additm"><button oncliick="add()" >Add item</button><br>
+   Enter No. to Delete item:<input type="text" id="removeitm"><button>Removeitem</button>
+</body>
+</html>

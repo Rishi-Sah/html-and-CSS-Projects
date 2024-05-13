@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.screen{
+    position:absolute;
+    left: 422px;
+    height:844px;
+    width:390px;
+    background-color: black;
+    dispaly:flex;
+    border: 6px solid rgb(194, 171, 171);
+    border-radius:50px;
+
+}
+.mic{
+    height:8px;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 31%;
+}
+.pic{
+    height:730px;
+    width: 390px;
+    background-color: white;
+    margin-top:20px;
+    border-radius:30px ;
+    background-image: url("rs.jpg");
+    background-size: cover;
+}
+.exitbtn{
+    height:45px;
+    width:45px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top:5px;
+    border:5px solid rgb(196, 176, 140);
+}

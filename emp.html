@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function upper(){
+    
+           let cell= document.querySelectorAll("#tb tbody td");
+           cell.forEach(function(cell){
+             cell.textContent=cell.textContent.toUpperCase();
+           })
+           
+        
+        }
+        function lower(){
+            
+           let cells= document.querySelectorAll("#tb tbody td");
+           cells.forEach(function(cell){
+             cell.textContent=cell.textContent.toLowerCase();
+           })
+
+        }
+        
+    </script>
+</head>
+<body>
+    <button id="sname" onclick="upper()">UpperCase</button><br>
+    <button id="ssalary" onclick="lower()">lowerCase</button><br>
+    
+    <table border="1" id="tb">
+        <thead>
+            <th>SLNO</th>
+            <th>NAME</th>
+            <th>SALARY</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>Rishi</td>
+            <td>50000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ram</td>
+            <td>40000</td>
+            <tr>
+                <td>3</td>
+                <td>Hari</td>
+                <td>60000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sita</td>
+                <td>70000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Rima</td>
+                <td>80000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<title>Date Application</title>
+<head>
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+</script>
+<script>
+var app=angular.module("dateApp",[]);
+app.controller("dateAppCntrl",function($scope){
+$scope.currentDate=new Date();
+});
+</script>
+</head>
+<body ng-app="dateApp">
+<h1>Date in different formats</h1>
+<div ng-controller="dateAppCntrl">
+Current Date and Time: {{currentDate}}<br/>
+Short Date: {{currentDate|date: 'short'}}<br/>
+Long Date: {{currentDate |date: 'fullDate'}}<br/>
+Medium Date:{{currentDate| date: 'medium'}}
+</div>
+</body>
+</html>
